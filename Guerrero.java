@@ -15,6 +15,8 @@ public class Guerrero extends Personaje {
         super(ubicacion, nick, orientacion);
     }
 
+    
+
     public boolean isCaballo() {
         return caballo;
     }
@@ -32,15 +34,19 @@ public class Guerrero extends Personaje {
         switch(orientacion){
             case 'N':
                 this.ubicacion.setY(ubicacion.getY() +10);
+                System.out.println("Avanzó diez pasos al Norte");
                 break;
             case 'E':
                 this.ubicacion.setX(ubicacion.getX() +10);
+                 System.out.println("Avanzó diez pasos al Este");
                 break;
             case 'S':
                 this.ubicacion.setY(ubicacion.getY() -10);
+                System.out.println("Avanzó diez pasos al Sur");
                 break;
             case 'O':
                 this.ubicacion.setX(ubicacion.getX() -10);
+                 System.out.println("Avanzó diez pasos al Oeste");
                 break;            
                 }
             System.out.println("Galopa con su caballo diez pasos");

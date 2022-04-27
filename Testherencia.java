@@ -17,10 +17,12 @@ public class Testherencia {
      */
     public static void main(String[] args) {
         
-        Personaje Thor = new Guerrero (100 ,"Thor",'N');
+        Personaje Thor = new Guerrero (new Position(100,200),"Thor",'N');
+        Thor.mostrarEnergia();
         Thor.Girar();
         Thor.Girar();
         Thor.Girar();
+        
         
         Thor.Avanzar();
         Thor.Avanzar();
@@ -36,6 +38,7 @@ public class Testherencia {
         Thor.Disparar();
         Thor.Disparar();
         Thor.Disparar();
+        Thor.mostrarEnergia();
         
     }
     

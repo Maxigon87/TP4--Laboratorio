@@ -36,16 +36,20 @@ public class Personaje {
         switch (orientacion) {
             case 'N':
                 orientacion = 'E';
+                System.out.println("Mira hacia el Este");
                 break;
                 
             case 'E':
                 orientacion = 'S';
+                System.out.println("Mira hacia el Sur");
                 break;
             case 'S':
                 orientacion = 'O';
+                System.out.println("Mira hacia el Oeste");
                 break;
             case 'O':
                 orientacion = 'N';
+                System.out.println("Mira hacia el Norte");
                 break;}
              
     }
@@ -91,7 +95,10 @@ public class Personaje {
     public void setVidas(int vidas) {
         this.vidas = vidas;
     }
-
+    
+    public void mostrarEnergia(){
+        System.out.println("Tengo "+ this.getEnergia() + " de energia");
+    }
     public int getEnergia() {
         return energia;
     }
